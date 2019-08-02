@@ -58,14 +58,14 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
+  background: rgba(168,168,168,1);
   color: #fff;
   box-shadow: none !important;
 }
 
   .portfolio-me p{
-    font-size: 14px;
-    color: #999;
+    font-size: 16px;
+    color: black;
   }
 
   .portfolio-me a{
