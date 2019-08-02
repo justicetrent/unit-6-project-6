@@ -58,8 +58,8 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: rgba(168,168,168,1);
-  color: #fff;
+  background: rgba(128,165,179,1);
+  color: rgba(168,168,168,1);
   box-shadow: none !important;
 }
 
