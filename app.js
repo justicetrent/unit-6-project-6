@@ -1,24 +1,27 @@
+// variables to require dependencies 
 let jsonData = require("./data/data.json")
 const projects = jsonData.projects
 const express = require("express")
 const app = express();
-app.set('view engine', 'pug');
+
+// Starts Middleware 
+app.set('view engine', 'pug'); // sets engine to pug
 app.use('/static', express.static('public'));
 
-app.get('/', (req, res) => {
+app.get('/', (req, res) => { 
       res.render('index', { projects });
 });
 
-app.get('/about', (req, res) => {
+app.get('/about', (req, res) => { // accesses about pug
     res.render('about');
 });
 
-app.get('/project/:id', (req, res) => {
+eapp.get('/project/:id', (req, res) => { // accesses project pug
     const id = req.params.id
     res.render('project', { project: projects[id]});
 });
-
-app.use((req, res, next) => {
+// function that displays error message when wrong url is entered.  
+app.use((req, res, next) => {     
     const err = new Error('Page Not Found');
     console.log('Check URL- THIS PAGE NOT FOUND')
     err.status = 404;
