@@ -16,7 +16,7 @@ app.get('/about', (req, res) => { // accesses about pug
     res.render('about');
 });
 
-eapp.get('/project/:id', (req, res) => { // accesses project pug
+app.get('/project/:id', (req, res) => { // accesses project pug
     const id = req.params.id // accesses the route parameter
     res.render('project', { project: projects[id]});
 });

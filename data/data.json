@@ -1,4 +1,4 @@
-// The array that I used to dynamically add information about each project to each section/ file in the project. 
+
 { 
     "projects": [
         {
