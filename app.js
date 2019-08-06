@@ -17,7 +17,7 @@ app.get('/about', (req, res) => { // accesses about pug
 });
 
 eapp.get('/project/:id', (req, res) => { // accesses project pug
-    const id = req.params.id
+    const id = req.params.id // accesses the route parameter
     res.render('project', { project: projects[id]});
 });
 // function that displays error message when wrong url is entered.  
